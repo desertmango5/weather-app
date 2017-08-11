@@ -3,7 +3,7 @@
 
 ### Description
 * Open Weather API
-* Diplays:
+* Displays:
   * Tempurature
   * Conditions icon
   * Weather description
@@ -13,7 +13,7 @@
   * Wind speed
 * Toggles between imperial and metric
 * Refresh button
-* Background images changes to match weather conditions
+* Background image changes to match weather conditions
 
 ### Technology Used
 * HTML5
