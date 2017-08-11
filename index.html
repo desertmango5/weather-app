@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Local Weather</title>
+		<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="foundation.min.css">
+		<link rel="stylesheet" type="text/css" href="weather.css">	
+	</head>
+	<body>
+		<div class="initial-parent">
+			<div class="initial-child">
+				<p class=""><button class="button secondary hollow highlighted" id="seeWeather">Click to see your local weather</button></p>
+				<p id="retrieving" class="text-center animated infinite pulse">Retrieving your weather data...</p>
+				<p id="permission" class="text-center">You might need to give your browser permission to continue</p>
+			</div>
+		</div>
+		<div class="display-parent">
+			<div class="display-child weather">
+				<div class="display-top">
+					<p class=""><span id="temp"></span> <span class="labels" id="units"></span></p>
+					<p class=""><span id="current"></span></p>
+					<p class=""><span id="description"></span></p>
+				</div>
+				<hr class="display">
+				<div class="display-city">
+					<p class=""><span id="city"></span></p>
+				</div>
+				<hr class="display">
+				<div class="display-bottom">
+					<p class="labels">Pressure<br><span id="pressure"></span> mb</p>
+					<p class="labels">Humidity<br><span id="humidity"></span>%</p>
+					<p class="labels">Wind<br><span id="wind"></span> <span id="windUnit"></span></p>
+				</div>
+			</div>
+		</div>
+			<div class="unit-buttons">
+				<a class="button secondary tiny auto weather" id="imperial">Imperial</a>
+				<a class="button secondary tiny auto weather" id="metric">Metric</a>
+			</div>
+			<div class="weather">
+				<p class="text-center"><a id="refresh" href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></p>
+			</div>
+		
+			
+
+			<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous"></script>
+		  <script type="text/javascript" src="js/foundation.min.js"></script>
+		  <script type="text/javascript" src="js/what-input.js"></script>
+		  <script type="text/javascript" src="js/openWeatherAPI.js"></script>
+		  <script src="https://use.fontawesome.com/c964a659e9.js"></script>
+
+	</body>
+</html>

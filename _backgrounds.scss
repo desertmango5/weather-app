@@ -1,0 +1,8 @@
+@mixin backgrounds {
+	background: {
+		repeat: no-repeat;
+		attachment: fixed;
+		size: cover;
+		position: center;
+	}
+}
