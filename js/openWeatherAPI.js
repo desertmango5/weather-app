@@ -30,7 +30,7 @@ var weatherApp = {
 	},
 	// access Open Weather API
 	getWeather: function(latitude, longitude, units) {
-	  $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&appid=c44bb65bf8b3b37d0b1a57e7fcdfa659&units=' + units + '', function(data) {
+	  $.getJSON('https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&appid=c44bb65bf8b3b37d0b1a57e7fcdfa659&units=' + units + '', function(data) {
 
 	    var icon = data.weather[0].icon;
 	    iconURL = "<img src='http://openweathermap.org/img/w/" + icon + ".png'>"
