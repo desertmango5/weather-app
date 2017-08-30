@@ -164,4 +164,8 @@ a i {
 .weather {
   display: none; }
 
+#current img{
+	width: 6rem;
+}
+
 /*# sourceMappingURL=weather.css.map */
