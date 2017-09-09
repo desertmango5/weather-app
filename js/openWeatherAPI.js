@@ -119,7 +119,7 @@ var weatherApp = {
 			} else if (conditionCode >= 700 && conditionCode < 800) {
 					$('body').fadeIn(500);
 					$('body').addClass('atmosphere');
-			}	else if (conditionCode === 800) {
+			}	else if (conditionCode == 800) {
 					$('body').fadeIn(500);
 					$('body').addClass('clear');
 			} else if (conditionCode >= 801 && conditionCode < 900) {
